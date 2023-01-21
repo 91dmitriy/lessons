@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ 13</title>
+</head>
+<body>
+<script>
+    let name =prompt('Введите ваше имя');
+    let surname =prompt('Введите вашу фамилию');
+    let age =prompt('Введите ваш возраст');
+    let gender =confirm('Ваш пол мужской?');
+    let pension;
+if  (gender==true) {
+    gender=('Мужчина');
+    if (age >=65) {
+    pension=('Да');
+    } else {
+    pension=('Нет');
+}
+}else {
+    gender=('Женщина');
+    if (age >=60) {
+    pension=('Да');
+    } else {
+    pension=('Нет');
+    }
+}
+alert (`Ваше имя: ${name}\nВаша фамилия: ${surname}\nВаш пол: ${gender}\nВы на пенсии: ${pension}`);
+</script>
+</body>
+</html>
